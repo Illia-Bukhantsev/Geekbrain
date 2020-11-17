@@ -1,0 +1,6 @@
+Проблема при Dump запросе
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump -uroot -p example >C:\MySqlDumps\dbexample1.sql;
+Enter password: ********
+mysqldump: Couldn't find table: ";"
+
