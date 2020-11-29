@@ -24,3 +24,11 @@ ALTER TABLE users MODIFY COLUMN updated_at DATETIME DEFAULT CURRENT_TIMESTAMP de
 -- 3) Task 3
 
 select firstname, timestampdiff(year, birthday, now()) As age from users order by age is not null;
+
+-- 5) Task 4
+
+select firstname, monthname(birthday)as m from users where birthday LIKE '%-05-%' OR birthday LIKE '%-08-%';
+
+-- 5) Task 5
+
+select * from users where id In(5,1,2) order by id desc;
